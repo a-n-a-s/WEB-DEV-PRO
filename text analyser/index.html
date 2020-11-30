@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Analyser</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      * {
+        font-family: "Poppins", sans-serif;
+        color: #fb8c8c;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url(bg.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-size: 100% 100%;
+      }
+      textarea {
+        border: 5px solid #fb8c8c;
+
+        font-weight: bolder;
+        font-size: large;
+        outline: none;
+      }
+      button {
+        color: white;
+        background-color: #fb8c8c;
+        border: 2px solid #fb8c8c;
+        outline: none;
+        cursor: pointer;
+        border-radius: 15px;
+      }
+      div {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+      }
+      h1 {
+        text-align: center;
+        color: #fff;
+      }
+      p {
+        text-align: center;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Text Analyser</h1>
+      <textarea name="" id="words" cols="30" rows="10"></textarea>
+
+      <p id="showdata"></p>
+
+      <p id="showdatas"></p>
+
+      <button onclick="countWords()" id="submit">Count</button>
+    </div>
+
+    <script>
+      const countWords = () => {
+        let noc = document.getElementById("words").value.length;
+        let now = document.getElementById("words").value;
+
+        now = now.match(/\w+/g);
+        now = now.length;
+
+        document.getElementById("showdata").innerHTML =
+          "Total Charecters are : " + noc;
+        document.getElementById("showdatas").innerHTML =
+          "Total Words are : " + now;
+      };
+    </script>
+  </body>
+</html>
