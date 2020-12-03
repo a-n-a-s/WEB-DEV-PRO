@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>VSpace</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+      * {
+        color: white;
+      }
+      body {
+        background-image: linear-gradient(to left, #8400ff, black);
+        height: 100vh;
+        font-family: "Poppins", sans-serif;
+      }
+      form {
+        width: auto;
+        margin-top: 100px;
+        margin-left: 200px;
+        margin-right: 200px;
+      }
+      span {
+        font-size: 5vh;
+      }
+      li:hover {
+        color: #000;
+        cursor: pointer;
+      }
+      h1 {
+        margin-top: 100px;
+        margin-left: 100px;
+        color: #fff;
+      }
+      p {
+        width: 400px;
+        margin-left: 100px;
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg">
+      <span class="font-weight-bold"> VSpace</span>
+
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item active mx-3">
+            Home <span class="sr-only">(current)</span>
+          </li>
+          <li class="nav-item mx-3">About</li>
+          <li class="nav-item mx-3">Services</li>
+          <li class="nav-item mx-3">Contact Us</li>
+        </ul>
+      </div>
+    </nav>
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="name@example.com"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlInput1">Name of the Article</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleFormControlInput1"
+          placeholder="Jupiter,Venus,etc"
+        />
+      </div>
+
+      <div class="form-group">
+        <label for="exampleFormControlTextarea1"
+          >More Info About The Article</label
+        >
+        <textarea
+          class="form-control"
+          id="exampleFormControlTextarea1"
+          rows="5"
+        ></textarea>
+      </div>
+
+      <button type="button" class="btn btn-dark btn-lg btn-block">
+        Submit
+      </button>
+    </form>
+
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
